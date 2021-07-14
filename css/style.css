@@ -96,6 +96,30 @@ main {
   color: #6c6c6c;
 }
 
+/********** live score style **********/
+.live-score {
+  margin-top: 30px;
+}
+.section-title {
+  text-align: center;
+  font-size: 28px;
+}
+.all-match {
+  margin: 10px 139px;
+}
+.teams {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.team {
+  margin: 5px 10px;
+  border: 1px solid rgb(209, 203, 203);
+  text-align: center;
+}
+.team-name {
+  font-size: 19px;
+}
+
 /******************* footer *******************/
 .footer-main {
   text-align: center;
@@ -138,6 +162,10 @@ main {
   .header-image {
     margin-top: 70px;
   }
+
+  .teams {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /*********** for tablet ***********/
@@ -153,5 +181,9 @@ main {
   }
   .header-image {
     margin-top: 70px;
+  }
+
+  .teams {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
