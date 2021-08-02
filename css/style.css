@@ -16,7 +16,6 @@ body {
 /**************** header style ****************/
 header {
   width: 100%;
-  height: auto;
   background: #2d25a0;
 }
 .header-area {
@@ -25,21 +24,18 @@ header {
   align-items: center;
 }
 .header-container {
-  padding: 100px 130px;
+  padding: 5vw 7vw;
 }
 .title {
+  font-size: clamp(2rem, 5vw, 4rem);
   font-weight: bold;
-  font-size: 66px;
   color: #ffffff;
-  padding: 23px;
 }
-.header-button {
-  margin-left: 26px;
-}
+
 .button {
   background: #e02c6d;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
   color: #ffffff;
   text-decoration: none;
   padding: 10px 15px;
@@ -47,15 +43,18 @@ header {
 .button-icon {
   margin-left: 5px;
 }
-.header-image img {
+.header-image-container {
+  margin-left: 3vw;
+}
+.header-image {
   width: 100%;
 }
 
 /* *****************
     header animation
  ******************/
-.header-image img:hover {
-  transform: translate(50px, 100px);
+.header-image:hover {
+  transform: translate(-50px, -50px);
   transition: transform 2s ease-in-out;
 }
 
@@ -153,37 +152,19 @@ main {
   .players {
     grid-template-columns: 1fr;
   }
-  .header-container {
+  /* .header-container {
     padding: 5px 30px;
-  }
+  } */
   .header-area {
     grid-template-columns: repeat(1, 1fr);
   }
-  .header-image {
-    margin-top: 70px;
+
+  .header-image-container {
+    margin-left: 0;
+    margin-top: 3em;
   }
 
   .teams {
     grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-/*********** for tablet ***********/
-@media only screen and (min-width: 689px) and (max-width: 991px) {
-  .players {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .header-container {
-    padding: 50px 70px;
-  }
-  .header-area {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .header-image {
-    margin-top: 70px;
-  }
-
-  .teams {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
