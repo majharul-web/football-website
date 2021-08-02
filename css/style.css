@@ -27,7 +27,7 @@ header {
   padding: 5vw 7vw;
 }
 .title {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: 5vw;
   font-weight: bold;
   color: #ffffff;
 }
@@ -43,9 +43,7 @@ header {
 .button-icon {
   margin-left: 5px;
 }
-.header-image-container {
-  margin-left: 3vw;
-}
+
 .header-image {
   width: 100%;
 }
@@ -124,9 +122,8 @@ main {
   text-align: center;
   margin: 100px 0 50px 0;
 }
-.footer-image img {
-  width: 360px;
-  height: 110px;
+.footer-image {
+  width: 50%;
 }
 .fab {
   padding: 10px;
@@ -166,5 +163,24 @@ main {
 
   .teams {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-image {
+    width: 60%;
+  }
+}
+
+/*************** For tablet***************/
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 27px;
+  }
+  .teams {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-image {
+    width: 70%;
   }
 }
